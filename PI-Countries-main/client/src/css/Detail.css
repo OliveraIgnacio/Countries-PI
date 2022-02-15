@@ -1,0 +1,129 @@
+.container{
+    background-color: #1e2a37;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-items: center;
+    background-attachment:fixed;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.cardDetail {
+    background-color: #273844;
+    padding: 1vh 2vw 1vh 2vw;
+    margin: 10vh 2vw 1vh 2vw;
+    width: auto;
+    height: auto;
+    align-self: center;
+    box-shadow: 0 12px 16px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countryDetail{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    line-height : 0px;
+    padding: 0vw 0 0 0;
+    margin: 0;
+    min-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    margin-left: 20px;
+}
+
+/*-------Flex Superior----*/
+.flexSuperior{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 3vw 0vw 2vw 3vw;
+}
+
+
+
+/*-------Grid Inferior----*/
+.gridInferior {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+
+/*-------Texto Card Activity----*/
+.cardActivity{
+    background-color: #1e2a37;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin: 0 0.5vw;
+    padding: 2vh 3vw;
+}
+
+.cardActivity:hover{
+    background-color: #273844;
+    border: 1px solid black;
+}
+
+.cardActivity h4{
+    color: white;
+    font-size: 1.7vw;
+    display: flex;
+    align-items: center;
+    
+}
+
+.cardActivity h5{
+    color: white;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    
+}
+
+/*-------Button Back----*/
+.buttonBack{
+    background-color: hsla(0, 0%, 1%, 0.281);
+    border: .1rem solid rgba(124, 124, 124, 0.493);
+    text-shadow: center;
+    color: #f4f7f8;
+    font-size: 15px;
+    backdrop-filter: blur(0.2rem);
+    cursor: pointer;
+    transition: 0.9s;
+    transform: translateY(-3%);
+    margin: 20px;
+    padding-top: 1px;
+    height: 30px;
+    width: 60px;
+    font-size: 10px;
+}
+
+.buttonBack:hover{
+    background-color: #273844;
+}
+
+/*--------Error Activity--*/
+.errorActivity{
+    background-color: #1e2a37;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin: 0 0.5vw;
+    padding: 2vh 3vw;
+}

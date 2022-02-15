@@ -1,0 +1,27 @@
+.ContainerSearch{
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    margin-top: 10px;
+    border: 0.1px solid black;
+    border-radius: 3px;
+}
+
+.InputSearch{
+    background-color: #1e2a37;
+    border: none;
+    color: white;
+}
+
+.InputSubmit{
+    background-color: #1e2a37;
+    border: 0px solid;
+    border: none;
+    color: white;
+    font-size: 10px;
+}
+
+.InputSubmit:hover {
+    background-color: #273844;
+    color: white;
+}
