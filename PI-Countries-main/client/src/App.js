@@ -1,7 +1,7 @@
 import './App.css';
 import { Route, Switch } from "react-router-dom";
 import LandingPage from './components/LandingPage';
-import Home from './components/Home';
+import Home  from './components/Home.jsx';
 import AddActivity from './components/AddActivity';
 import Nav from './components/Nav';
 import Detail from './components/Detail';

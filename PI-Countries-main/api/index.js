@@ -23,8 +23,13 @@ const { getApiInfo } = require('./src/routes/index')
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
-  getApiInfo(),
-  server.listen(3001, () => {
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
-  });
+  try{
+    getApiInfo()
+    server.listen(3001, () => {
+      console.log('%s listening at 3001'); // eslint-disable-line no-console
+    });   
+  }
+  catch(error){
+    console.log('Error al levantar el servidor', error)
+  }
 });

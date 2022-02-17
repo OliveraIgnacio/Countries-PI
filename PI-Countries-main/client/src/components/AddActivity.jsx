@@ -155,7 +155,7 @@ export default function AddActivity() {
           <label>Difficulty:</label>
           <input
             type="number"
-            min="0"
+            min="1"
             max="5"
             value={input.dificult}
             name="dificult"

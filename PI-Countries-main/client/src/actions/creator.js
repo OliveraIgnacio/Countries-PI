@@ -4,7 +4,6 @@ import { GET_COUNTRIES,
         FILTER_BY_SEASON, 
         ORDER_BY_NAME, 
         GET_COUNTRY_BY_NAME,
-        GET_ACTIVITIES,
         ORDER_BY_POPULATION,
         GET_COUNTRY_BY_ID
     } from "./types";
@@ -70,7 +69,6 @@ export function filterCountriesByContinent(payload){
 }
 
 export function filterActivityBySeason(){
-    console.log('olaaas')
     return {
         type: FILTER_BY_SEASON,
     }

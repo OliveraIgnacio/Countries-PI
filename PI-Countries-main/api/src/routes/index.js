@@ -2,14 +2,11 @@ const { Router } = require('express');
 const axios = require('axios');
 const { Country, Activity } = require ('../db');
 
-// Importar todos los routers;
-// Ejemplo: const authRouter = require('./auth.js');
-
 
 const router = Router();
 
 // Configurar los routers
-// Ejemplo: router.use('/auth', authRouter);
+
 //Funcion para requerir toda la informacion desde la API:
 const getApiInfo = async () => {
     const apiUrl = await axios.get('https://restcountries.com/v3/all')
@@ -25,7 +22,7 @@ const getApiInfo = async () => {
                population: e.population ? e.population : "Not found"
             }
     })
-    const clear = await apiInfo.forEach((e) => {
+    const create = await apiInfo.forEach((e) => {
       if (e) {
         Country.findOrCreate({
           where: {

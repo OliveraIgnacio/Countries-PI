@@ -45,9 +45,8 @@ function reducer(state= initialState, {type, payload}) {
 
         case FILTER_BY_CONTINENT:
             const allCountries = state.countriesAll
-            {
                 if(payload === 'default'){return{...state}}
-            }
+            
             const countriesFiltered = payload === 'All' ? allCountries : allCountries.filter(c => c.continent === payload)
             return{
                 ...state,
@@ -56,9 +55,7 @@ function reducer(state= initialState, {type, payload}) {
 
 
         case FILTER_BY_SEASON:
-            console.log('chau')
             const filterByCountriesWhitActivities = state.countries.filter(c => c.Activities.length > 0) //Traigo solo los paises con actividades cargada
-            console.log(filterByCountriesWhitActivities)
             
             return {
                 ...state,
@@ -68,9 +65,7 @@ function reducer(state= initialState, {type, payload}) {
 
 
         case ORDER_BY_NAME:
-            {
-                if(payload === 'default'){return{...state}}
-            }
+            if(payload === 'default'){return{...state}}
             let orderType = payload === 'asc' ?
                 state.countries.sort(function (a,b) {
                     if(a.name > b.name){
@@ -97,9 +92,7 @@ function reducer(state= initialState, {type, payload}) {
         
         
         case ORDER_BY_POPULATION:
-            {
-                if(payload === 'default'){return{...state}}
-            }
+            if(payload === 'default'){return{...state}}
             let order = payload === 'men' ?
                 state.countries.sort(function (a,b) {
                     if(a.population > b.population){
